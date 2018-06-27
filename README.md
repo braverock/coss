@@ -158,7 +158,7 @@ Resources
 
 Fogel, Karl. 2017. “Producing Open Source Software: How to Run a Successful Free Software Project.” Sebastopol: O’Reilly. <https://producingoss.com/>.
 
-Peterson, Brian G. 2016. “Research Replication.” DV Trading, University of Washington. <https://www.researchgate.net/publication/319298241_Research_Replication>.
+Peterson, Brian G. 2016. “Research Replication.” Braverock Investments, University of Washington. <https://www.researchgate.net/publication/319298241_Research_Replication>.
 
 R Core Team. 2014. *R: A Language and Environment for Statistical Computing*. Vienna, Austria: R Foundation for Statistical Computing. <http://www.R-project.org/>.
 
