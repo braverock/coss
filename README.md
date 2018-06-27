@@ -162,6 +162,6 @@ Peterson, Brian G. 2016. “Research Replication.” Braverock Investments, Univ
 
 R Core Team. 2014. *R: A Language and Environment for Statistical Computing*. Vienna, Austria: R Foundation for Statistical Computing. <http://www.R-project.org/>.
 
-Raymond, Eric S. 2008. “The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary.” Sebastopol: O’Reilly Media, Inc. <http://gbv.eblib.com/patron/FullRecord.aspx?p=443450>.
+Raymond, Eric S. 2008. “The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary.” Sebastopol: O’Reilly Media, Inc. <http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/>.
 
 Xie, Yihui. 2014. “R Markdown — Dynamic Documents for R.” <http://rmarkdown.rstudio.com/>.
