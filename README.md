@@ -55,14 +55,14 @@ One of the earliest places that people contribute to open source ecosystems is t
 If you want the open source community to quickly help fix your bug, you should endeavor to make it easy for the developers (whether or not you are one of those developers) to replicate your error (and thus verify that the error is fixed after changing something). We've included a few in-depth resources, below, on reporting bugs, but here are the basics.
 
 -   describe what you were trying to do, and what you expected to happen
--   construct and proved a minimal reproducible example
+-   construct and provide a minimal reproducible example
 -   describe your environment
 
 It is very hard for developers to do anything with a report that says little more than "this feature is broken".
 
-Start by trying to make a clear description of what you were doing when the suspected bug occured, and what you expected. Make sure to clearly describe any errors that the software gave you, or any odd output from the code you were attempting to use.
+Start by trying to make a clear description of what you were doing when the suspected bug occurred, and what you expected. Make sure to clearly describe any errors that the software gave you, or any odd output from the code you were attempting to use.
 
-Construct a minimal resproducible example. The smaller the example is, the easier it is for a developer to replicate and verify the bug. There are many resources online describing how to do this. Your goal should be to use the smallest set of steps or amount of code and data to replicate your problem that you can manage. Often, the process of attempting to create a repeatable example will either identify the problem, or make clear that something else is wrong, so this step is key.
+Construct a minimal reproducible example. The smaller the example is, the easier it is for a developer to replicate and verify the bug. There are many resources online describing how to do this. Your goal should be to use the smallest set of steps or amount of code and data to replicate your problem that you can manage. Often, the process of attempting to create a repeatable example will either identify the problem, or make clear that something else is wrong, so this step is key.
 
 Don't forget to describe your environment. Your operating system, software stack, and library or package versions all have an impact on finding the bug.
 
@@ -121,7 +121,7 @@ The answer to this particular itch can be to port that code to a language of you
 
 This often ties into a larger effort of <span id="replicating">replicating published research</span>.
 
-Whether as part of replication or not, porting code can be am accessible way of contributing. You have a piece of code that can presdumably be <span id="testing">tested</span>, you want that code in another language. You assume that some other user of your target language may also want that code.
+Whether as part of replication or not, porting code can be am accessible way of contributing. You have a piece of code that can presumably be <span id="testing">tested</span>, you want that code in another language. You assume that some other user of your target language may also want that code.
 
 When porting the code of others, you should always attribute *your* code as being derived from the original. This should include notes in the comments, in the documentation, and in any other references or bibliography that your work contains. You want to point people to the original source. You also want to make clear where you've chosen to deviate from the original source. Often porting code finds bugs in the original, but does not invalidate the original work. Reporting those bugs can help everyone. Often you will add features to better suit your use-case. This is part of the natural evolution of open source.
 
@@ -150,7 +150,7 @@ One of us (Brian) has written an essay with a process for replicating published 
 Why Companies Should Contribute to Open Source
 ==============================================
 
-The software world has experienced a huge rise in open source offerings in the last 20 years. As the open source software stack for all levels of technical architecture has matured, solutions that are credible in the enterprise have emerged. At this point, almost all firms are using open source software *somewhere* in their architecture, whether through Linux servers, or through JavaScript widgets on their website, or in their data science and analasys stack. It seems clear that in many areas, companies of all types have seen the value in *using* open source software as a complement or alternative to commercial offerings of custom development.
+The software world has experienced a huge rise in open source offerings in the last 20 years. As the open source software stack for all levels of technical architecture has matured, solutions that are credible in the enterprise have emerged. At this point, almost all firms are using open source software *somewhere* in their architecture, whether through Linux servers, or through JavaScript widgets on their website, or in their data science and analysis stack. It seems clear that in many areas, companies of all types have seen the value in *using* open source software as a complement or alternative to commercial offerings of custom development.
 
 Open source can feel somewhat more ‘raw’ than their commercial counterparts. Functionality is driven by a community process, so features are developed as people and companies using the software feel the need to develop them. This can leave gaps in functionality. On the other hand, Open source software has no licensing costs, and community development eliminates vendor lock-in and planned version obsolescence. It is our opinion that open source is mature enough that it provides an attractive alternative to commercial software or a complete custom application development effort.
 
@@ -161,7 +161,7 @@ Companies that are users of open source can benefit from contributing to the ope
 Companies can also gain reputational advantages by contributing. Major technology firms including Microsoft, Google, Red Hat, and Facebook have all allowed their employees to publish papers, contribute to open source code, and author new software in the open source ecosystem. This contributes to employee loyalty, makes recruiting top talent easier, and improves the reputation of the firm in that area of inquiry.
 
 <!-- NOTE: there are a million news articles about this, we should link to them -->
-We encourage firms to be open to contributing to open source, and to allowing their employees to contribute. Intitial steps can be small, in an area where the contribution is clearly non-proprietary, and where it will impact code that the firm is already using. A firm policy on things like bug fixes is relatively easy to create and enforce. A broader policy on what types of work on open source are permitted, and how approvals should be granted will take more work but we feel that work is often rewarded.
+We encourage firms to be open to contributing to open source, and to allowing their employees to contribute. Initial steps can be small, in an area where the contribution is clearly non-proprietary, and where it will impact code that the firm is already using. A firm policy on things like bug fixes is relatively easy to create and enforce. A broader policy on what types of work on open source are permitted, and how approvals should be granted will take more work but we feel that work is often rewarded.
 
 Colophon
 ========

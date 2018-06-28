@@ -86,18 +86,18 @@ after changing something). We've included a few in-depth resources, below, on
 reporting bugs, but here are the basics.
 
 - describe what you were trying to do, and what you expected to happen
-- construct and proved a minimal reproducible example
+- construct and provide a minimal reproducible example
 - describe your environment
 
 It is very hard for developers to do anything with a report 
 that says little more than "this feature is broken".
 
 Start by trying to make a clear description of what you were doing when the 
-suspected bug occured, and what you expected.  Make sure to clearly describe any
+suspected bug occurred, and what you expected.  Make sure to clearly describe any
 errors that the software gave you, or any odd output from the code you were 
 attempting to use.
 
-Construct a minimal resproducible example.  The smaller the example is, the 
+Construct a minimal reproducible example.  The smaller the example is, the 
 easier it is for a developer to replicate and verify the bug. There are many
 resources online describing how to do this.  Your goal should be to use the 
 smallest set of steps or amount of code and data to replicate your problem that 
@@ -198,7 +198,7 @@ your choice.
 This often ties into a larger effort of [replicating published research]{#replicating}.
 
 Whether as part of replication or not, porting code can be am accessible way of
-contributing.  You have a piece of code that can presdumably be [tested]{#testing},
+contributing.  You have a piece of code that can presumably be [tested]{#testing},
 you want that code in another language.  You assume that some other user of your
 target language may also want that code.
 
@@ -259,7 +259,7 @@ last 20 years. As the open source software stack for all levels of technical
 architecture has matured, solutions that are credible in the enterprise have 
 emerged.  At this point, almost all firms are using open source software
 *somewhere* in their architecture, whether through Linux servers, or through
-JavaScript widgets on their website, or in their data science and analasys stack. 
+JavaScript widgets on their website, or in their data science and analysis stack. 
 It seems clear that in many areas, companies of all types have seen the value in
 *using* open source software as a complement or alternative to commercial
 offerings of custom development.
@@ -294,7 +294,7 @@ the firm in that area of inquiry.
 <!-- NOTE: there are a million news articles about this, we should link to them -->
 
 We encourage firms to be open to contributing to open source, and to allowing 
-their employees to contribute.  Intitial steps can be small, in an area where
+their employees to contribute.  Initial steps can be small, in an area where
 the contribution is clearly non-proprietary, and where it will impact code that
 the firm is already using.  A firm policy on things like bug fixes is relatively
 easy to create and enforce.  A broader policy on what types of work on open
