@@ -5,8 +5,8 @@ Soumya Kalra and Brian G. Peterson
 -   [Introduction](#introduction)
 -   [Getting Started](#getting-started)
     -   [*Documentation*](#documentation)
-    -   [*Testing*](#testing)
     -   [*Bug Reports*](#reports)
+    -   [*Testing*](#testing)
     -   [*Small New Features*](#features)
     -   [*Porting Code to a Different Language*](#porting)
     -   [*Replicating Published Research*](#replicating)
@@ -32,8 +32,8 @@ Getting Started
 Raymond writes that "Every good work of software starts by scratching a developer's personal itch." Most new contributors to open source don't start by creating a large project with a team and releases and hundreds of pages of documentation. Most new contributors start small. Some of those avenues, in roughly increasing order of complexity:
 
 -   <span id="documentation">documentation</span>
--   <span id="testing">testing</span>
 -   <span id="reports">bug reports</span>
+-   <span id="testing">testing</span>
 -   <span id="features">small new features</span>
 -   <span id="porting">porting code to a different language</span>
 -   <span id="replicating">replicating published research</span>
@@ -47,6 +47,38 @@ Anyone can contribute to open source. Individuals who are not programmers, data 
 -   past you
 -   future you
 
+*Bug Reports*
+-------------
+
+One of the earliest places that people contribute to open source ecosystems is through reporting bugs that they find as users.
+
+If you want the open source community to quickly help fix your bug, you should endeavor to make it easy for the developers (whether or not you are one of those developers) to replicate your error (and thus verify that the error is fixed after changing something). We've included a few in-depth resources, below, on reporting bugs, but here are the basics.
+
+-   describe what you were trying to do, and what you expected to happen
+-   construct and proved a minimal reproducible example
+-   describe your environment
+
+It is very hard for developers to do anything with a report that says little more than "this feature is broken".
+
+Start by trying to make a clear description of what you were doing when the suspected bug occured, and what you expected. Make sure to clearly describe any errors that the software gave you, or any odd output from the code you were attempting to use.
+
+Construct a minimal resproducible example. The smaller the example is, the easier it is for a developer to replicate and verify the bug. There are many resources online describing how to do this. Your goal should be to use the smallest set of steps or amount of code and data to replicate your problem that you can manage. Often, the process of attempting to create a repeatable example will either identify the problem, or make clear that something else is wrong, so this step is key.
+
+Don't forget to describe your environment. Your operating system, software stack, and library or package versions all have an impact on finding the bug.
+
+If you are running an older version of the software, make sure to test on a newer version, as the bug may already have been fixed in the newer version. Also, before reporting a bug, search the bug reporting system for a similar bug to yours, and try to make sure you're not reporting a duplicate bug.
+
+If you find yourself testing the same features or functions over and over again, consider writing testing scripts or automated tests, see <span id="testing">Testing</span>, below.
+
+Developers really appreciate good bug reports. Try to give them something useful, and you should be rewarded.
+
+**Bug Resources:**
+
+-   [Principles of Good Bug Reporting](http://qablog.practitest.com/principles-of-good-bug-reporting/)
+-   [Stack Overflow: How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve)
+-   [Short, Self Contained, Correct (Compilable), Example](http://sscce.org/)
+-   [Stack Overflow: How to make a great R reproducible example?](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+
 *Testing*
 ---------
 
@@ -56,22 +88,12 @@ At least, all code (probably) has (a) bug(s) (somewhere). Generally, the best th
 
 The way to push the (remaining) bugs into low-impact corners is through testing.
 
-If you have found a bug in open source software that you want to report, and potentially help fix, see <span id="reports">Bug Reports</span>, below.
+If you have found a bug in open source software that you want to report, and potentially help fix, see <span id="reports">Bug Reports</span>, above.
 
 Both manual and automated tests are important, but we'll start with manual testing.
 
 -   expected inputs and outputs
 -   unexpected inputs and bounds testing
-
-*Bug Reports*
--------------
-
-**Bug Resources:**
-
--   [Principles of Good Bug Reporting](http://qablog.practitest.com/principles-of-good-bug-reporting/)
--   [Stack Overflow: How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve)
--   [Short, Self Contained, Correct (Compilable), Example](http://sscce.org/)
--   [Stack Overflow: How to make a great R reproducible example?](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
 
 *Small New Features*
 --------------------
