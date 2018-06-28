@@ -168,6 +168,8 @@ Colophon
 
 This essay is a work in progress, and we welcome ideas and suggestions.
 
+The canonical copy and source for this document may be found [here](https://github.com/braverock/coss).
+
 This document is rendered into LaTeX and HTML using *rmarkdown* (Xie 2014)
 
 The BibTeX bibliography file is managed via [JabRef](http://jabref.sourceforge.net/).
