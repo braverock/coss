@@ -92,8 +92,17 @@ If you have found a bug in open source software that you want to report, and pot
 
 Both manual and automated tests are important, but we'll start with manual testing.
 
--   expected inputs and outputs
--   unexpected inputs and bounds testing
+Manual testing is fundamentally a process of creating checklists. Atul Gawande (2010) , in *The Checklist Manifesto*, examines the many ways that having appropriate checklists can improve consistency and reduce errors in multiple different fields and endeavors. Software testing is no different. Long before the possibility of automating software tests, formal software quality assurance teams used testing scripts or checklists to test key features of applications.
+
+Anyone can create a software test. In its simplest form, a test is a list of expected inputs and expected (correct) outputs. To be more complete, test scripts for specific features should also try to feed incorrect inputs into a feature and verify that an appropriate error, warning, or failure mode is reached, an that the software does not return incorrect results and continue without notice. A collection of multiple tests is often combined into a formal *test plan*.
+
+Tests are often created after a bug is located. These tests, once they exist, can be used to verify the corrected behavior of the software after the bug is fixed. If maintained and re-tested on new versions of the software, they can also be used to guard against *regression*, or the re-emergence of previously incorrect behavior in future versions of the software.
+
+-   automated tests
+-   testing tools, preferences
+-   test coverage
+
+Very few open source projects without corporate sponsors have dedicated testers. If you are not a developer, but a particular piece of code is important to you, then contributing testing reports, scripts, and if possible automated tests can have a positive impact on the stability and correctness of that code going forward.
 
 *Small New Features*
 --------------------
@@ -179,6 +188,8 @@ Resources
 =========
 
 Fogel, Karl. 2017. “Producing Open Source Software: How to Run a Successful Free Software Project.” Sebastopol: O’Reilly. <https://producingoss.com/>.
+
+Gawande, Atul. 2010. “The Checklist Manifesto: How to Get Things Right.” London: Profile Books.
 
 Peterson, Brian G. 2016. “Research Replication.” Braverock Investments, University of Washington. <https://www.researchgate.net/publication/319298241_Research_Replication>.
 
