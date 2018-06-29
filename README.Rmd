@@ -19,11 +19,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This essay hopes to be a gentle introduction to contributing to open source 
 software.  The authors work in finance, and write open source software mostly 
-in R [@R2014], though we have previously contributed to open source ecosystems 
-across many industries (Finance, Customer Service, Telecommunications, Enterprise 
-Resource Planning, Cryptography) and languages (R, C, C++, Java, matlab, perl, PHP). 
-As such, we hope that this essay is useful in a general sense to those wishing 
-to find ways to contribute to open source software ecosystems.
+in **R**[@R2014], though we have previously contributed to open source ecosystems 
+across many industries/application (Finance, Customer Service,
+Telecommunications, Enterprise Resource Planning, Cryptography, Bug Tracking)
+and languages (R, C, C++, Java, python, matlab, perl, PHP). As such, we hope
+that this essay is useful in a general sense to those wishing to find ways to
+contribute to open source software ecosystems.
 
 It is important to note that we are not the first people to grapple with the
 issues around contributing to open source.  Eric S. Raymond's classic
@@ -42,9 +43,13 @@ Our goal is to look at individual contributions, and as a possible extension,
 how those individual contributions may fit into contributions while at work,
 with the blessing of your firm or employer.  We will cover the possible evolution
 from individual contributions to employer-sponsored teams and team contributions,
-but that is not our overall focus.  We will try to point to external resources
-along the way to help a potential contributor be more successful in their 
-desire to contribute to open source.
+but that is not our overall focus.  Our hope is not to be to proscriptive, fussy, 
+or pedantic, but rather to offer suggestions that have a high chance of helping
+you to succeed in contributing and getting your work out into the world where
+others can recognize your effort and other users can take advantage of that 
+effort. We will try to point to external resources along the way to help a 
+potential contributor be more successful in their desire to contribute to open 
+source.
 
 # Getting Started
 
@@ -71,8 +76,35 @@ mean that you have nothing to contribute.
 
 ## *Documentation* {#documentation}
 
-- past you
-- future you
+While many people's first interactions with and contributions to an open source
+development ecosystem are often [bug reports]{#reports}, their first *exposure*
+to a piece of open source code is often official or unofficial documentation. 
+In many cases, documentation can be an easy, low impact way to make contributions
+to open source software that you use.  Developers often neglect documentation,
+but most would appreciate improvements to the documentation for their code, as 
+that should lead to more users.
+
+Writing documentation is a balance between the needs of "past you" and
+"future you".  
+
+In the "scratching and itch" model of development, you can 
+consider what documentation "past you" would have wanted to see when learning 
+new software, or a specific function or feature of the existing software.
+What examples would have helped you better use the feature?  Is there language 
+in the documentation that was too terse or too dense or not expository enough?
+All of these are opportunities to contribute new documentation.
+
+"Future you" also needs documentation.  We often find that advanced or less-used 
+options in software require extra documentation, specifically because they are 
+not used that often.  Advanced features may also have more subtle or hard to 
+understand effects that can't easily be described in short descriptions of 
+the options of a function.  Writing more complete explanations of the uses and 
+implications of these advanced features will help your future self remember how
+they work, and improve the documentation for others as well.
+
+- short form, long form 
+- examples/demos
+- unofficial documentation
 
 ## *Bug Reports* {#reports}
 
@@ -121,7 +153,6 @@ Developers really appreciate good bug reports.  Try to give them something usefu
 and you should be rewarded.
 
 **Bug Resources:**
-
 
 - [Principles of Good Bug Reporting](http://qablog.practitest.com/principles-of-good-bug-reporting/)
 - [Stack Overflow: How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve)
@@ -177,13 +208,44 @@ If you are not a developer, but a particular piece of code is important to you,
 then contributing testing reports, scripts, and if possible automated tests can 
 have a positive impact on the stability and correctness of that code going forward.
 
-
 ## *Small New Features* {#features}
 
+Once you've maybe you've reported a bug or two, and added a bit to the
+documentation for a piece of code that you use, you may be interested in going
+further.  Often, this can come in the form of extending existing features, or
+adding new features to software you use.
+
+While this is open source, and boldly striking off on your own (known as 
+"forking") is certainly an option, we recommend working with the existing 
+developers, if possible, to get your extension added. Our opinion is that
+proliferation of minor variations on a theme is less useful to you and to
+the community than extending already published code that is "almost" what you
+want/need it to be.
+
+These small functionality improvements fall into a few common categories:
+
+- fixing existing issues/bugs
 - adding to an existing function
 - creating a new function
-- fixing existing issues/bugs
 - compiling data sets
+
+If you are trying to fix an existing issue or bug, then you should attach your
+proposed fix to the issue.  This can come in the form of a patch file, a pull
+request, a copy of the proposed fixed file plus a diff, or other forms.  Try to
+follow the process already used for other issues by the team you are trying to 
+help.
+
+The best place to start is by filing an issue or [bug report]{#reports}, clearly
+labeling or tagging the report as a feature request, describing what you want to
+do, and making clear that you are offering to write the code, documentation, and
+(if applicable) tests for the new feature. Hopefully a developer or maintainer 
+of the code will engage with you about your request.
+
+When writing new code to extend existing software, try to stick with in the 
+style and conventions of that existing code.  (more on this below in best 
+practices)  Your goal should be to make it as easy as possible for the existing
+developer or development team to review your proposed contribution, give 
+feedback, and ultimately accept the contribution.
 
 ## *Porting Code to a Different Language* {#porting}
 
@@ -252,6 +314,64 @@ broader applicability to anyone wishing to replicate papers.[@PetersonReplicatio
 
 ## *Writing Plugins, Libraries, or Packages* {#packages}
 
+If the functionality that you need is more than a single feature or function,
+and is not well served by an existing open source package or software ecosystem,
+then it may be time to consider the much larger contribution of writing a plugin,
+library, or package from scratch.  As we discussed above, forking an existing 
+code base is to be avoided in most cases, as it only fragments the potential 
+user base, and more often than not will simply lead to unused and unmaintained 
+code.  
+
+Before embarking on this path, we would strongly recommend reading @Fogel2017, 
+and thinking about the team you wish to put together to build the software you 
+have in mind. It may be adivsable to gain some experience by joining an 
+established team, though this may not be fasible if no suitable software exists,
+and you end up deciding to go ahead and create it.
+
+One trend that has become common in the data science world of **R** and *python* 
+is the small package or library, maybe only one or two functions.  This can 
+serve to get your work out there, and might be one of the *fastest* ways to do 
+so.  This route is often followed by graduate students who release a small 
+package to support a journal article, or by computer scientists to demonstrate 
+a single algorithm.  The vast majority of this code is of questionable quality
+and likely to be unmaintained after a short time.  Problems of unmaintained code
+cause users a lot of headaches, and open source ecosystems deal with this in 
+different ways. **R** will archive and "orphan" packages that fail version and
+quality checks. *python* is still [figuring out a process](https://github.com/pypa/warehouse/issues/1506).  
+
+If you decide to write a package, try to make it:
+
+- not a near-clone of existing supported code
+- substantial enough to make it useful
+- supported by a team so that it won't be orphaned
+
+See the resources above on licensing for some guidance on choosing a license for
+your new code. As we've already discussed, it often makes sense to choose a 
+license that is compatible with the ecosystem you want your code to fit into,
+even if you feel that it may not be the *best* possible license for what you 
+want to contribute.  If your company is sponsoring your work, they may also have 
+preferences or policies on permitted or preferred licenses.
+
+# Contribution Best Practices {#etiquette}
+
+When contributing to an existing body of open source code, your contributions
+will be looked upon most favorably if you follow some basic etiquette in 
+interacting with the existing contributors.  All open source projects have a set
+of formal and informal norms.  These may be written down on the project website
+or documention, talked about on project chat channels, or only exist implicitly
+in the code.  As with speaking a forign language in a different country, to the
+degree that you can be seen to be *trying* to comply with these norms, the 
+acceptance of your contribution is likely to be smoother and proceed more 
+favorably.
+
+- code formatting
+- variable naming conventions
+- commit comment standards
+- workflow process
+- issue process
+
+<!-- lots of online references for this section -->
+
 # Why Companies Should Contribute to Open Source
 
 The software world has experienced a huge rise in open source offerings in the 
@@ -298,7 +418,7 @@ their employees to contribute.  Initial steps can be small, in an area where
 the contribution is clearly non-proprietary, and where it will impact code that
 the firm is already using.  A firm policy on things like bug fixes is relatively
 easy to create and enforce.  A broader policy on what types of work on open
-source are permitted, and how approvals should be granted will take more work
+source are permitted, and how approvals should be granted will take more work,
 but we feel that work is often rewarded.
 
 
@@ -307,6 +427,7 @@ but we feel that work is often rewarded.
 This essay is a work in progress, and we welcome ideas and suggestions.
 
 The canonical copy and source for this document may be found [here](https://github.com/braverock/coss).
+This version was compiled on ```r Sys.Date()```.
 
 This document is rendered into LaTeX and HTML using *rmarkdown* [@Rmarkdown]
 
@@ -321,7 +442,7 @@ ___
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
 
 The contents of this essay do not necessarily reflect the ideas or policies of
-the authors employers, and do not imply that our employers have endorsed it in
+the authors' employers, and do not imply that our employers have endorsed it in
 any way.  We provide this work in the hope that it will be useful, and without 
 warranty or assurance of any kind.
 
