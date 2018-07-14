@@ -1,6 +1,6 @@
 ---
 title: "Contributing to Open Source Software"
-author: "Soumya Kalra and Brian G. Peterson"
+author: "Brian G. Peterson and Soumya Kalra"
 bibliography: coss.bib
 output: 
   github_document:
@@ -50,6 +50,14 @@ others can recognize your effort and other users can take advantage of that
 effort. We will try to point to external resources along the way to help a 
 potential contributor be more successful in their desire to contribute to open 
 source.
+
+# Motivation to Contribute
+
+Contributing to open source can be an incredibly rewarding experience.  Typically you are at the brink of open source contribution because you want to:
+- share many ideas developed through reading or exploring your work in your day job.
+- learn and develop your ideas with feedback from experts in the field
+- contribute to ideas that you wouldn't have encountered in your work.
+- Develop a personal portfolio to share with potential employers and collaborators.
 
 # Getting Started
 
@@ -370,7 +378,10 @@ favorably.
 - workflow process
 - issue process
 
-<!-- lots of online references for this section -->
+Examples of a few resources are below:
+[Joseph Allen's Guide](https://medium.com/@JosephAllen1234/helping-an-open-source-project-on-github-and-basic-etiquette-beffe5484b3)
+[Open Source Guide by Dodds and Drasner](https://css-tricks.com/open-source-etiquette-guidebook/)
+[Guide on Gitetiquette](https://www.stevejgordon.co.uk/github-contributor-tips-tricks-gitiquette)
 
 # Why Companies Should Contribute to Open Source
 
@@ -435,7 +446,7 @@ The BibTeX bibliography file is managed via [JabRef](http://jabref.sourceforge.n
 
 ___
 
-©2018 Soumya Kalra & Brian G. Peterson 
+©2018 Brian G. Peterson & Soumya Kalra 
 
 ![](cc_by.png)
 
